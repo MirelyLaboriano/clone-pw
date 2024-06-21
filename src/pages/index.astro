@@ -3,7 +3,66 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title="Welcome to Astro.">
-    <h1>Hello world</h1>
-    
+    <!-- componente -->
+    <header class="p-6 max-w-screen-xl mx-auto">
+        <img src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/UqDWmG0WIwSpO945bPZ9/media/666dbe1c3751738739d9746c.jpeg" alt="">
+    </header>
+    <main>
+        <section class="bg-[#294d54] text-[#fff]  ">
+            <h3 class="text-center p-6 text-3xl md:text-4xl font-bold">Duplica tu dinero y asegura tu futuro financiero</h3>
+        </section>
+
+        <section class="flex justify-end fondo">
+            <form class="flex-col bg-[#294d54] m-5 rounded-lg pb-10">
+                <div class="p-5 ">
+                    <img class="w-[80%] mx-auto" src="https://images.leadconnectorhq.com/image/f_webp/q_85/r_1000/u_https://storage.googleapis.com/highlevel-backend.appspot.com/location/UqDWmG0WIwSpO945bPZ9/form/c3iPjqWWtd3i6uBY4qsJ/bc64ec20-9772-482f-bc07-09e927d67aca.png" alt="">
+                </div>
+                <ul class="">
+                    <li>
+                        <input type="text" placeholder="*Nombre*"/>
+                    </li>
+                    <li>
+                        <input type="text" maxlength="9" placeholder="*Celular*"/>
+                    </li>
+                    <li>
+                        <input type="text" placeholder="*consulta*">
+                    </li>
+                    <li>
+                        <input type="submit" value="Enviar" class="" style="background-color: #f7a618; width:30%; padding:10px 0px;" >
+                    </li>
+                </ul>
+            </form>
+            
+            
+        </section>
+
+        
+    </main>
+
 </Layout>
+
+<style>
+    .fondo{
+        background: url("/portada.webp");
+        background-position: center;
+	    
+
+    }
+    
+    li{
+        text-align: center;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        
+        
+    }
+    li>input{
+        background-color: #8eabb2;
+        border-radius: 4px;
+        width: 70%;
+        padding: 7px;
+        
+        
+    }
+</style>
 
