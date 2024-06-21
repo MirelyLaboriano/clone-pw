@@ -13,7 +13,7 @@ import Layout from '../layouts/Layout.astro';
         </section>
 
         <section class="flex justify-end fondo">
-            <form class="flex-col bg-[#294d54] m-5 rounded-lg pb-10">
+            <form class="flex-col bg-[#034251D4] m-5 rounded-lg pb-10">
                 <div class="p-5 ">
                     <img class="w-[80%] mx-auto" src="https://images.leadconnectorhq.com/image/f_webp/q_85/r_1000/u_https://storage.googleapis.com/highlevel-backend.appspot.com/location/UqDWmG0WIwSpO945bPZ9/form/c3iPjqWWtd3i6uBY4qsJ/bc64ec20-9772-482f-bc07-09e927d67aca.png" alt="">
                 </div>
@@ -25,7 +25,7 @@ import Layout from '../layouts/Layout.astro';
                         <input type="text" maxlength="9" placeholder="*Celular*"/>
                     </li>
                     <li>
-                        <input type="text" placeholder="*consulta*">
+                        <textarea cols="55" rows="3" placeholder="*consulta*" />
                     </li>
                     <li>
                         <input type="submit" value="Enviar" class="" style="background-color: #f7a618; width:30%; padding:10px 0px;" >
@@ -70,8 +70,6 @@ import Layout from '../layouts/Layout.astro';
     .fondo{
         background: url("/portada.webp");
         background-position: center;
-	    
-
     }
     
     li{
@@ -86,8 +84,17 @@ import Layout from '../layouts/Layout.astro';
         border-radius: 4px;
         width: 70%;
         padding: 7px;
-        
-        
     }
+	li>input::placeholder{
+		color: black;
+	}
+
+	li>textarea{
+		background-color: #8eabb2;
+		border-radius: 4px;
+	}
+	li>textarea::placeholder{
+		color: black;
+	}
 </style>
 
