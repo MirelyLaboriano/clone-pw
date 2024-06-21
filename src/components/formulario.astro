@@ -3,36 +3,44 @@
 import TituloVerde from '../components/titulo-verde.astro'
 ---
 <TituloVerde titulo="Duplica tu dinero y asegura tu futuro financiero" />
-<section class="flex justify-end fondo">
-    <div class="">
+<section class="flex fondo">
+    <div class="max-w-screen-2xl mx-auto flex justify-between w-full my-10">
+        <div class="w-[70%] hidden md:block"></div>
+        <div class="mx-auto">
+            <form class="flex-col bg-[#034251D4] m-5 rounded-lg pb-10">
+                <div class="p-5 ">
+                    <img class="w-[80%] mx-auto" src="https://images.leadconnectorhq.com/image/f_webp/q_85/r_1000/u_https://storage.googleapis.com/highlevel-backend.appspot.com/location/UqDWmG0WIwSpO945bPZ9/form/c3iPjqWWtd3i6uBY4qsJ/bc64ec20-9772-482f-bc07-09e927d67aca.png" alt="">
+                </div>
+                <ul class="">
+                    <li>
+                        <input type="text" placeholder="*Nombre" required autofocus />
+                    </li>
+                    <li>
+                        <input type="text" maxlength="9" placeholder="*Celular" required/>
+                    </li>
+                    <li>
+                        <textarea  placeholder="*consulta ..." required/>
+                    </li>
+                    <li>
+                        <input type="submit" value="Enviar" class="" style="background-color: #f7a618; width:30%; padding:10px 0px;" >
+                    </li>
+                </ul>
+            </form>
+        </div>
         
-        <form class="flex-col bg-[#034251D4] m-5 rounded-lg pb-10">
-            <div class="p-5 ">
-                <img class="w-[80%] mx-auto" src="https://images.leadconnectorhq.com/image/f_webp/q_85/r_1000/u_https://storage.googleapis.com/highlevel-backend.appspot.com/location/UqDWmG0WIwSpO945bPZ9/form/c3iPjqWWtd3i6uBY4qsJ/bc64ec20-9772-482f-bc07-09e927d67aca.png" alt="">
-            </div>
-            <ul class="">
-                <li>
-                    <input type="text" placeholder="*Nombre*"/>
-                </li>
-                <li>
-                    <input type="text" maxlength="9" placeholder="*Celular*"/>
-                </li>
-                <li>
-                    <textarea  placeholder="*consulta*" />
-                </li>
-                <li>
-                    <input type="submit" value="Enviar" class="" style="background-color: #f7a618; width:30%; padding:10px 0px;" >
-                </li>
-            </ul>
-        </form>
     </div>
-    
     
 </section>
 
 <style>
     .fondo{
+        margin: 0;
+        padding: 0;
+        /* height: 100vh; */
         background: url("/portada.webp");
+        /* background-image: url('tu-imagen.jpg'); Reemplaza 'tu-imagen.jpg' con la ruta de tu imagen */
+        background-size: cover; 
+        background-repeat: no-repeat; 
         background-position: center;
     }
     
@@ -60,6 +68,6 @@ import TituloVerde from '../components/titulo-verde.astro'
         padding: 7px;
 	}
 	li>textarea::placeholder{
-		color: black;
+		color: #000000;
 	}
 </style>
