@@ -6,6 +6,5 @@ import tailwind from "@astrojs/tailwind";
 export default defineConfig({
   integrations: [tailwind()],
   site:'https://MirelyLaboriano.github.io',
-
-base:'clone-pw',
+  base:'clone-pw',
 });
